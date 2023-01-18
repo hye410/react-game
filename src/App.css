@@ -1,0 +1,92 @@
+
+#root{
+  /* width:100vw; */
+  height: 100vh;
+  padding-top : 150px;
+  background : repeat center center url('./pic/background.jpg');
+  background-size: 100vw 100%;
+
+}
+#box{
+  width : 80vw;
+  margin : 0 auto;
+  /* background-color: pink; */
+  padding : 30px;
+}
+
+#btn{
+  text-align: center;
+}
+
+#btn>button{
+  margin: 0 20px;
+  border: none;
+  font : bold 25px /40px "나눔",'nanum',sans-serif; 
+  background-color : rgb(255, 255, 255);
+  box-shadow: 1px 2px 3px rgb(221, 149, 149);
+  cursor: pointer;
+  color : rgb(108, 109, 105);
+}
+
+#btn>button:active{
+  translate: 2px 2px;
+}
+
+#game{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom : 30px;
+}
+
+#game h1{
+  text-align: center;
+  font:bold 30px /50px 'Hahmlet', serif;
+  margin-bottom : 25px;
+  background-color: rgba(181, 181, 181, 0.722);
+  box-shadow: 1px 2px 3px rgb(104, 102, 102);
+  color : rgb(255, 255, 255);
+}
+#game>.gameA{
+  order : 1;
+  width : 210px;
+}
+
+#game>.gameB{
+  order : 3;
+  width : 210px;
+}
+
+#game>.result{
+  width: 210px;
+  /* background-color: aliceblue; */
+  order : 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  margin-bottom : 20px;
+}
+
+dl{
+  text-align: center;
+  /* background-color: #fff; */
+}
+
+dt{
+  font : bold 20px /30px 'Hahmlet', serif;
+  margin-bottom:10px;
+  color : rgb(19, 49, 53);
+}
+
+dd{
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color : rgb(104, 85, 24);
+}
+
+.result dd:last-child{
+  color : red;
+}
